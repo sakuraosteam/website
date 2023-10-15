@@ -1,0 +1,122 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.img-5596-2-1 {
+  position: absolute;
+  top: 5px;
+  left: 874px;
+  width: 172px;
+  height: 78px;
+  object-fit: cover;
+}
+.frame1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background-color: #000;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.67);
+  width: 1920px;
+  height: 89px;
+  overflow: hidden;
+}
+.linear-arrows-action-downl,
+.linear-map-location-peop {
+  position: absolute;
+  top: 19px;
+  left: 1840px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.linear-map-location-peop {
+  left: 1751px;
+}
+.sakura {
+  background: linear-gradient(93.28deg, #f4a9ff, #f442d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sakuraos {
+  position: absolute;
+  top: 336px;
+  left: 455px;
+  font-size: 128px;
+  font-weight: 800;
+  display: inline-block;
+  width: 1011px;
+  height: 128px;
+  color: #f44dd5;
+}
+.flows-like-petals {
+  position: absolute;
+  top: 482px;
+  left: 888px;
+  font-weight: 600;
+}
+.sakuraos-prop-1-icon {
+  position: absolute;
+  top: 694px;
+  left: 766px;
+  width: 389px;
+  height: 832px;
+  object-fit: cover;
+}
+.download {
+  position: relative;
+}
+.download-wrapper {
+  position: absolute;
+  top: 576px;
+  left: 880px;
+  border-radius: 41px;
+  background-color: #d16391;
+  width: 161px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1526px;
+  overflow: hidden;
+}
+.index1 {
+  position: relative;
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  background-image: url(./public/index@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 1;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-urbanist);
+}
+.index1.animate {
+  animation: 1s ease 0s 1 normal forwards scale-up;
+}
+@media screen and (max-width: 960px) {
+  .flows-like-petals,
+  .sakuraos {
+    text-align: center;
+  }
+  .download-wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+}
