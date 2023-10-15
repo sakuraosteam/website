@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <title>🌸 SakuraOS | Flows like petals</title>
 
-    <meta name="description" content="SakuraOS flows like petals" />
+    <meta name="description" content="SakuraOS" />
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
     <link
@@ -14,43 +14,49 @@
     />
   </head>
   <body>
-    <div class="index1" data-animate-on-scroll>
-      <div class="frame">
-        <div class="frame1">
-          <img class="img-5596-2-1" alt="" src="./public/img-5596-2-1@2x.png" />
-        </div>
-        <img
-          class="linear-arrows-action-downl"
-          alt=""
-          src="./public/linear--arrows-action--download-square.svg"
-          id="linearArrowsActionDownl"
-        />
+    <div class="index1">
+      <img
+        class="sakuraos-prop-1-icon"
+        alt=""
+        src="./public/sakuraos-prop-1@2x.png"
+      />
 
-        <img
-          class="linear-map-location-peop"
-          alt=""
-          src="./public/linear--map--location--people-nearby.svg"
-          id="linearMapLocationPeop"
-        />
-
+      <div class="sakuraos-parent">
         <div class="sakuraos">
           <span class="sakura">Sakura</span>
           <span>OS</span>
         </div>
         <i class="flows-like-petals">Flows like petals</i>
-        <img
-          class="sakuraos-prop-1-icon"
-          alt=""
-          src="./public/sakuraos-prop-1@2x.png"
-        />
-
-        <div class="download-wrapper" id="frameContainer1">
-          <b class="download">Download</b>
-        </div>
       </div>
+      <div class="download-wrapper" id="frameContainer">
+        <b class="download">Download</b>
+      </div>
+      <div class="frame">
+        <img class="img-5596-2-1" alt="" src="./public/img-5596-2-1@2x.png" />
+      </div>
+      <img
+        class="linear-arrows-action-downl"
+        alt=""
+        src="./public/linear--arrows-action--download-square.svg"
+        id="linearArrowsActionDownl"
+      />
+
+      <img
+        class="linear-map-location-peop"
+        alt=""
+        src="./public/linear--map--location--people-nearby.svg"
+        id="linearMapLocationPeop"
+      />
     </div>
 
     <script>
+      var frameContainer = document.getElementById("frameContainer");
+      if (frameContainer) {
+        frameContainer.addEventListener("click", function () {
+          window.open("https://github.com/sakuraosteam/SakuraOS-Releases/releases");
+        });
+      }
+      
       var linearArrowsActionDownl = document.getElementById(
         "linearArrowsActionDownl"
       );
@@ -65,32 +71,6 @@
         linearMapLocationPeop.addEventListener("click", function () {
           window.open("https://dsc.gg/sakuraos");
         });
-      }
-      
-      var frameContainer1 = document.getElementById("frameContainer1");
-      if (frameContainer1) {
-        frameContainer1.addEventListener("click", function () {
-          window.open("https://github.com/sakuraosteam/SakuraOS-Releases/releases");
-        });
-      }
-      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-      var observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting || entry.intersectionRatio > 0) {
-              const targetElement = entry.target;
-              targetElement.classList.add("animate");
-              observer.unobserve(targetElement);
-            }
-          }
-        },
-        {
-          threshold: 0.15,
-        }
-      );
-      
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.observe(scrollAnimElements[i]);
       }
       </script>
   </body>

@@ -1,79 +1,48 @@
-@keyframes scale-up {
-  0% {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.img-5596-2-1 {
+.sakuraos-prop-1-icon {
   position: absolute;
-  top: 5px;
-  left: 874px;
-  width: 172px;
-  height: 78px;
+  top: 687px;
+  left: 669px;
+  width: 389px;
+  height: 832px;
   object-fit: cover;
 }
-.frame1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50px;
-  background-color: #000;
-  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.67);
-  width: 1920px;
-  height: 89px;
-  overflow: hidden;
-}
-.linear-arrows-action-downl,
-.linear-map-location-peop {
-  position: absolute;
-  top: 19px;
-  left: 1840px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-.linear-map-location-peop {
-  left: 1751px;
-}
 .sakura {
-  background: linear-gradient(93.28deg, #f4a9ff, #f442d0);
+  background: linear-gradient(93.28deg, #d99de2, #f442d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .sakuraos {
   position: absolute;
-  top: 336px;
-  left: 455px;
-  font-size: 128px;
+  top: 0;
+  left: 0;
   font-weight: 800;
   display: inline-block;
   width: 1011px;
   height: 128px;
-  color: #f44dd5;
+  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.25);
 }
 .flows-like-petals {
   position: absolute;
-  top: 482px;
-  left: 888px;
+  top: 138px;
+  left: 433px;
+  font-size: var(--font-size-xl);
   font-weight: 600;
+  color: var(--color-white);
 }
-.sakuraos-prop-1-icon {
+.sakuraos-parent {
   position: absolute;
-  top: 694px;
-  left: 766px;
-  width: 389px;
-  height: 832px;
-  object-fit: cover;
+  top: 322px;
+  left: 358px;
+  width: 1011px;
+  height: 162px;
 }
 .download {
   position: relative;
 }
 .download-wrapper {
   position: absolute;
-  top: 576px;
-  left: 880px;
+  top: 554px;
+  left: 783px;
   border-radius: 41px;
   background-color: #d16391;
   width: 161px;
@@ -83,32 +52,69 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.img-5596-2-1 {
+  position: relative;
+  width: 172px;
+  height: 78px;
+  object-fit: cover;
 }
 .frame {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1920px;
-  height: 1526px;
+  top: 30px;
+  left: 20px;
+  border-radius: 50px;
+  background-color: #000;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.67);
+  width: 1693px;
+  height: 89px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.linear-arrows-action-downl,
+.linear-map-location-peop {
+  position: absolute;
+  top: 49px;
+  left: 1643px;
+  width: 44px;
+  height: 50px;
+  cursor: pointer;
+}
+.linear-map-location-peop {
+  left: 1564px;
 }
 .index1 {
   position: relative;
   width: 100%;
-  height: 1080px;
+  height: 1117px;
   overflow: hidden;
   background-image: url(./public/index@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  opacity: 1;
   text-align: center;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
+  font-size: 128px;
+  color: #f44dd5;
   font-family: var(--font-urbanist);
 }
-.index1.animate {
-  animation: 1s ease 0s 1 normal forwards scale-up;
+@media screen and (max-width: 1200px) {
+  .sakuraos-parent {
+    width: 1111px;
+  }
+  .frame {
+    display: flex;
+    width: 1200px;
+    height: 89px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
 }
 @media screen and (max-width: 960px) {
   .flows-like-petals,
